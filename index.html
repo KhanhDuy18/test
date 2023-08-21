@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bannerStyle.css" />
+    <link rel="stylesheet" href="./productStyle.css" />
+    <link rel="stylesheet" href="./responsiveStyle.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="flex-row">
+      <a href="#"
+        ><img
+          src="./img//Logo.png"
+          alt="Ella"
+          class="header__left header__logo"
+      /></a>
+      <div class="header__right">
+        <p class="header__right--logan">
+          Free shipping on All Orders. No Minimum Purchase
+        </p>
+        <ul class="flex-row header__right--options">
+          <li>
+            <i class="fa-solid fa-bag-shopping"></i><a href="#">Shopping </a>
+            <span class="flex-center orderNumber">0</span>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-heart"></i>My Wish Lists</a>
+          </li>
+          <li><a href="#">Sign In or Create an account</a></li>
+        </ul>
+      </div>
+    </header>
+    <nav>
+      <ul class="flex-row menu">
+        <li class="menu__item"><a href="#">New in</a></li>
+        <li class="menu__item"><a href="#">Trend</a></li>
+        <li class="menu__item">
+          <a href="#">Collections</a
+          ><span class="flex-center menu__item--type sale">Sale</span>
+        </li>
+        <li class="menu__item"><a href="#">Lookbooks</a></li>
+        <li class="menu__item">
+          <a href="#">Demo</a>
+          <span class="flex-center menu__item--type new">New</span>
+        </li>
+        <li class="menu__item">
+          <a href="#">Shop instagram</a
+          ><span class="flex-center menu__item--type hot">Hot</span>
+        </li>
+        <li class="menu__item"><a href="#">Blog</a></li>
+        <li class="menu__item"><a href="#">brands</a></li>
+        <li class="menu__item"><a href="">Faqs</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="banner">
+        <img
+          src="./img//banner-background.jpg"
+          alt="banner-background"
+          class="banner__background"
+        />
+        <div class="banner__information">
+          <h1 class="banner__information--title">Cosmopolis</h1>
+          <div class="banner__information--desc flex-center">
+            <p>Quisquemos sodales suscipit tortor ditaemcos condimentum</p>
+            <p>de cosmo lacus meleifend menean diverra loremous.</p>
+          </div>
+          <button class="banner__information--button">Shop Now</button>
+        </div>
+      </section>
+      <section class="p-6 flex-row subBanner">
+        <a href="#" class="subBanner__item">
+          <img
+            src="./img/sub-banner-1.jpg"
+            alt="Subbanner image"
+            class="subBanner__item-img"
+          />
+          <p>Editor’s Pick</p>
+        </a>
+        <a href="#" class="subBanner__item">
+          <img
+            src="./img/sub-banner-2.jpg"
+            alt="Subbanner image"
+            class="subBanner__item-img"
+          />
+          <p>Shoes</p>
+        </a>
+        <a href="#" class="subBanner__item">
+          <img
+            src="./img/sub-banner-3.jpg"
+            alt="Subbanner image"
+            class="subBanner__item-img"
+          />
+          <p>Accessories</p>
+        </a>
+      </section>
+      <section class="p-6 products flex-center">
+        <h3 class="products__title">New Arrivals</h3>
+        <a href="#" class="products__link--viewAll">View All</a>
+        <div class="products__list">
+          <div class="product">
+            <div class="product__tools">
+              <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
+              <span class="flex-center"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+            <div class="product-img">
+              <img src="./img/product-img-1.jpg" />
+              <div class="product__btn--addToCart">Add To Cart</div>
+              <form action="post" class="product__form">
+                <p class="product__form--displayingSize">
+                  Size: <span>SX</span>
+                </p>
+                <div class="product__form--sizingOptions">
+                  <input type="radio" id="XS" name="productSize" value="XS" />
+                  <label for="XS">XS</label><br />
+                  <input type="radio" id="S" name="productSize" value="S" />
+                  <label for="S">S</label><br />
+                  <input type="radio" id="M" name="productSize" value="M" />
+                  <label for="M">M</label><br />
+                  <input type="radio" id="L" name="productSize" value="L" />
+                  <label for="L">L</label><br />
+                  <input type="radio" id="XL" name="productSize" value="XL" />
+                  <label for="XL">XL</label><br />
+                  <input type="radio" id="2XL" name="productSize" value="2XL" />
+                  <label for="2XL">2XL</label><br />
+                </div>
+                <button class="product__form--submitBtn" type="submit">
+                  Submit
+                </button>
+                <button class="product__form--closeBtn">
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+              </form>
+            </div>
+            <div class="flex-center product__information">
+              <p class="product__information--title">Sodling</p>
+              <p class="product__information--desc">
+                Naminos Dementus A Milance - Pattern
+              </p>
+              <p class="product__information--price">$86.00 - $99.00</p>
+              <div class="product__information--color">
+                <span class="color-item"></span>
+                <span class="color-item"></span>
+                <span class="color-item"></span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__tools">
+              <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
+              <span class="flex-center"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+            <div class="product-img">
+              <img src="./img/product-img-1.jpg" />
+              <div class="product__btn--addToCart">Add To Cart</div>
+              <form action="post" class="product__form">
+                <p class="product__form--displayingSize">
+                  Size: <span>SX</span>
+                </p>
+                <div class="product__form--sizingOptions">
+                  <input type="radio" id="XS" name="productSize" value="XS" />
+                  <label for="XS">XS</label><br />
+                  <input type="radio" id="S" name="productSize" value="S" />
+                  <label for="S">S</label><br />
+                  <input type="radio" id="M" name="productSize" value="M" />
+                  <label for="M">M</label><br />
+                  <input type="radio" id="L" name="productSize" value="L" />
+                  <label for="L">L</label><br />
+                  <input type="radio" id="XL" name="productSize" value="XL" />
+                  <label for="XL">XL</label><br />
+                  <input type="radio" id="2XL" name="productSize" value="2XL" />
+                  <label for="2XL">2XL</label><br />
+                </div>
+                <button class="product__form--submitBtn" type="submit">
+                  Submit
+                </button>
+                <button class="product__form--closeBtn">
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+              </form>
+            </div>
+            <div class="flex-center product__information">
+              <p class="product__information--title">Sodling</p>
+              <p class="product__information--desc">
+                Naminos Dementus A Milance - Pattern
+              </p>
+              <p class="product__information--price">$86.00 - $99.00</p>
+              <div class="product__information--color">
+                <span class="color-item blue"></span>
+                <span class="color-item baqeadadad"></span>
+                <span class="color-item"></span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__tools">
+              <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
+              <span class="flex-center"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+            <div class="product-img">
+              <img src="./img/product-img-1.jpg" />
+              <div class="flex-center product__btn--addToCart">
+                <button>Add To Cart</button>
+              </div>
+              <form action="post" class="product__form">
+                <p class="product__form--displayingSize">
+                  Size: <span>SX</span>
+                </p>
+                <div class="product__form--sizingOptions">
+                  <input type="radio" id="XS" name="productSize" value="XS" />
+                  <label for="XS">XS</label><br />
+                  <input type="radio" id="S" name="productSize" value="S" />
+                  <label for="S">S</label><br />
+                  <input type="radio" id="M" name="productSize" value="M" />
+                  <label for="M">M</label><br />
+                  <input type="radio" id="L" name="productSize" value="L" />
+                  <label for="L">L</label><br />
+                  <input type="radio" id="XL" name="productSize" value="XL" />
+                  <label for="XL">XL</label><br />
+                  <input type="radio" id="2XL" name="productSize" value="2XL" />
+                  <label for="2XL">2XL</label><br />
+                </div>
+                <button class="product__form--submitBtn" type="submit">
+                  Submit
+                </button>
+                <button class="product__form--closeBtn">
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+              </form>
+            </div>
+            <div class="flex-center product__information">
+              <p class="product__information--title">Sodling</p>
+              <p class="product__information--desc">
+                Naminos Dementus A Milance - Pattern
+              </p>
+              <p class="product__information--price">$86.00 - $99.00</p>
+              <div class="product__information--color">
+                <span class="color-item"></span>
+                <span class="color-item"></span>
+                <span class="color-item"></span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__tools">
+              <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
+              <span class="flex-center"
+                ><i class="fa-regular fa-heart"></i
+              ></span>
+            </div>
+            <div class="product-img">
+              <img src="./img/product-img-1.jpg" />
+              <div class="product__btn--addToCart">Add To Cart</div>
+              <form action="post" class="product__form">
+                <p class="product__form--displayingSize">
+                  Size: <span>SX</span>
+                </p>
+                <div class="product__form--sizingOptions">
+                  <input type="radio" id="XS" name="productSize" value="XS" />
+                  <label for="XS">XS</label><br />
+                  <input type="radio" id="S" name="productSize" value="S" />
+                  <label for="S">S</label><br />
+                  <input type="radio" id="M" name="productSize" value="M" />
+                  <label for="M">M</label><br />
+                  <input type="radio" id="L" name="productSize" value="L" />
+                  <label for="L">L</label><br />
+                  <input type="radio" id="XL" name="productSize" value="XL" />
+                  <label for="XL">XL</label><br />
+                  <input type="radio" id="2XL" name="productSize" value="2XL" />
+                  <label for="2XL">2XL</label><br />
+                </div>
+                <button class="product__form--submitBtn" type="submit">
+                  Submit
+                </button>
+                <button class="product__form--closeBtn">
+                  <i class="fa-regular fa-xmark"></i>
+                </button>
+              </form>
+            </div>
+            <div class="flex-center product__information">
+              <p class="product__information--title">Sodling</p>
+              <p class="product__information--desc">
+                Naminos Dementus A Milance - Pattern
+              </p>
+              <p class="product__information--price">$86.00 - $99.00</p>
+              <div class="product__information--color">
+                <span class="color-item"></span>
+                <span class="color-item"></span>
+                <span class="color-item"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="products__btn--showMore">Show More</button>
+      </section>
+      <section class="gallery">
+        <h3 class="gallery__title">
+          <i class="fa-brands fa-instagram"></i> #Ella On Instagram
+        </h3>
+        <p class="gallery__desc">
+          Phasellus lorem malesuada ligula pulvinar commodo maecenas
+        </p>
+        <div class="gallery__slider">
+          <button class="gallery__slider--prevBtn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="gallery__slider--nextBtn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <img
+            src="./img/gallery-img-1.jpg"
+            alt=""
+            class="gallery__silder--item"
+          />
+          <img
+            src="./img/gallery-img-2.jpg"
+            alt=""
+            class="gallery__silder--item"
+          />
+          <img
+            src="./img/gallery-img-3.jpg"
+            alt=""
+            class="gallery__silder--item"
+          />
+          <img
+            src="./img/gallery-img-4.jpg"
+            alt=""
+            class="gallery__silder--item"
+          />
+          <img
+            src="./img/gallery-img-5.jpg"
+            alt=""
+            class="gallery__silder--item"
+          />
+        </div>
+        <a href="#" class="gallery__btn--viewGallery">View Gallery</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__top">
+        <div class="footer__shop">
+          <h5 class="footer__title">Shop</h5>
+          <ul class="footer__list">
+            <li class="footer__list--item">New In</li>
+            <li class="footer__list--item">Women</li>
+            <li class="footer__list--item">Men</li>
+            <li class="footer__list--item">Shoes</li>
+            <li class="footer__list--item">Blogs & Accessories</li>
+            <li class="footer__list--item">Top Brands</li>
+            <li class="footer__list--item">Sale & Special Offers</li>
+            <li class="footer__list--item">Lookbook</li>
+          </ul>
+        </div>
+        <div class="footer__information">
+          <h5 class="footer__title">Information</h5>
+          <ul class="footer__list">
+            <li class="footer__list--item">About</li>
+            <li class="footer__list--item">Customer Service</li>
+            <li class="footer__list--item">Reward Program</li>
+            <li class="footer__list--item">Shipping & Returns</li>
+            <li class="footer__list--item">Privacy Policy</li>
+            <li class="footer__list--item">Term & Conditions</li>
+            <li class="footer__list--item">Blog</li>
+          </ul>
+        </div>
+        <div class="footer__customerService">
+          <h5 class="footer__title">Customer Service</h5>
+          <ul class="footer__list">
+            <li class="footer__list--item">Search Terms</li>
+            <li class="footer__list--item">Advanced Search</li>
+            <li class="footer__list--item">Orders and Returns</li>
+            <li class="footer__list--item">Contact Us</li>
+            <li class="footer__list--item">Theme FAQs</li>
+            <li class="footer__list--item">Consultant</li>
+            <li class="footer__list--item">Store Locations</li>
+          </ul>
+        </div>
+        <div class="footer__NewsletterSignUp">
+          <h5 class="footer__title">Customer Service</h5>
+          <p class="footer__NewsletterSignUp--from">
+            Sign up for exclusive updates, new arrivals & insider only discounts
+          </p>
+          <form action="" class="footer__NewsletterSignUp--form">
+            <input type="text" placeholder="Email Address" />
+            <button type="submit">Submit</button>
+          </form>
+          <div class="footer__NewsletterSignUp--socialLink">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href=""><i class="fa-brands fa-snapchat"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom--coppyRight">
+          <p>© 2014 Ella Demo. All Rights Reserved. Powered by Shopify.</p>
+          <p>Shopify Themes by HaloThemes.com</p>
+        </div>
+        <div class="footer__bottom--payment"></div>
+      </div>
+    </footer>
+  </body>
+</html>
