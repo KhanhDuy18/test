@@ -1,6 +1,6 @@
 .gallery {
   padding: 60px 18.6% 70px;
-  background-color: #fafafa;
+  background-color: var(--grey-3);
   flex-direction: column;
 }
 .gallery__title {
@@ -19,7 +19,7 @@
 .gallery__desc {
   font-size: 12pt;
   text-align: center;
-  color: #555555;
+  color: var(--grey-4);
   margin-bottom: 45px;
 }
 .gallery__slider {
@@ -45,14 +45,14 @@
   top: 50%;
   z-index: 2;
   border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
+  background-color: var(--white);
+  border: 1px solid var(--grey-5);
   width: 35px;
   height: 35px;
 }
 .gallery__slider--prevBtn i,
 .gallery__slider--nextBtn i {
-  color: #323232;
+  color: var(--black-5);
 }
 .gallery__slider--prevBtn {
   left: 0;
@@ -65,17 +65,17 @@
 .gallery__btn--viewGallery {
   width: 230px;
   padding: 15px 0;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14pt;
   font-weight: 600;
-  border: #000 1px solid;
+  border: var(--black) 1px solid;
 }
 .gallery__btn--viewGallery:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
 }
 @media (max-width: 1023px) {
   .gallery {

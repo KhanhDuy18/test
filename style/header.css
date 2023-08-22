@@ -9,7 +9,7 @@ header {
 }
 .adsBanner {
   width: 100%;
-  background-color: #ffe8e8;
+  background-color: var(--pink);
   display: flex;
   flex-direction: row;
   gap: 0 100px;
@@ -17,13 +17,13 @@ header {
   padding: 15px 0;
 }
 .adsBanner p {
-  color: #c58282;
+  color: var(--pink-2);
   font-size: 12pt;
   white-space: nowrap;
 }
 .adsBanner span,
 .adsBanner i {
-  color: #b05d5d;
+  color: var(--pink-3);
 }
 .adsBanner span {
   font-weight: 600;
@@ -31,7 +31,7 @@ header {
 .header {
   justify-content: space-between;
   padding: 30px 18.6%;
-  background-color: #fff;
+  background-color: var(--white);
 }
 .header__btn--toggle {
   display: none;
@@ -67,7 +67,7 @@ header {
 }
 .header__right--options a {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 .header__right--options a:hover {
   text-decoration: underline;
@@ -76,14 +76,14 @@ header {
   border-radius: 50%;
   width: 23px;
   height: 23px;
-  background-color: #ffe8e8;
+  background-color: var(--pink);
   margin-left: 8px;
 }
 .menu {
   width: 100%;
   list-style-type: none;
   padding: 16px 18.6%;
-  background-color: #000;
+  background-color: var(--black);
   flex-wrap: wrap;
   gap: 20px 0;
 }
@@ -93,7 +93,7 @@ header {
 }
 .menu__item a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   font-size: 14pt;
   font-weight: 600;
   text-transform: uppercase;
@@ -122,14 +122,23 @@ header {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }
+.sale {
+  background-color: var(--orange);
+}
+.new {
+  background-color: var(--blue);
+}
+.hot {
+  background-color: var(--yellow);
+}
 .menu__item--type.sale::before {
-  border-top: 5px solid #ef6454;
+  border-top: 5px solid var(--orange);
 }
 .menu__item--type.new::before {
-  border-top: 5px solid #06bfe2;
+  border-top: 5px solid var(--blue);
 }
 .menu__item--type.hot::before {
-  border-top: 5px solid #ffbb49;
+  border-top: 5px solid var(--yellow);
 }
 /*header*/
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -142,7 +151,7 @@ header {
   .header {
     flex-wrap: wrap;
     gap: 15px;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 20px 12%;
   }
   .menu {
@@ -170,7 +179,7 @@ header {
   .header {
     flex-wrap: wrap;
     gap: 15px;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 15px 8%;
   }
   .header__logo {
@@ -210,7 +219,7 @@ header {
   }
 }
 @media (max-width: 740px) {
-  header{
+  header {
     position: fixed;
     top: 0;
     z-index: 99;
@@ -271,7 +280,7 @@ header {
     height: 100vh;
     top: -1000%;
     padding: 16px 5%;
-    background-color: #000;
+    background-color: var(--black);
     gap: 15px 0;
     flex-direction: column;
     overflow: auto;

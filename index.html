@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELLA</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/Logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -23,7 +25,6 @@
     <link rel="stylesheet" href="./style/product.css" />
     <link rel="stylesheet" href="./style/gallery.css" />
     <link rel="stylesheet" href="./style/footer.css" />
-    <title>ELLA</title>
   </head>
   <body>
     <header>
@@ -48,7 +49,7 @@
       <div class="flex-row header">
         <a href="#"
           ><img
-            src="./img//Logo.png"
+            src="./assets/image//Logo.png"
             alt="Ella"
             class="header__left header__logo"
         /></a>
@@ -93,7 +94,7 @@
     <main>
       <section class="banner">
         <img
-          src="./img//banner-background.jpg"
+          src="./assets/image/banner-background.jpg"
           alt="banner-background"
           class="banner__background"
         />
@@ -109,7 +110,7 @@
       <section class="vertialPadding flex-row subBanner">
         <a href="#" class="subBanner__item">
           <img
-            src="./img/sub-banner-1.jpg"
+            src="./assets/image/sub-banner-1.jpg"
             alt="Subbanner image"
             class="subBanner__item-img"
           />
@@ -117,7 +118,7 @@
         </a>
         <a href="#" class="subBanner__item">
           <img
-            src="./img/sub-banner-2.jpg"
+            src="./assets/image/sub-banner-2.jpg"
             alt="Subbanner image"
             class="subBanner__item-img"
           />
@@ -125,7 +126,7 @@
         </a>
         <a href="#" class="subBanner__item">
           <img
-            src="./img/sub-banner-3.jpg"
+            src="./assets/image/sub-banner-3.jpg"
             alt="Subbanner image"
             class="subBanner__item-img"
           />
@@ -144,11 +145,11 @@
               <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
             </div>
             <div class="product-img">
-              <img src="./img/product-img-1.jpg" />
+              <img src="./assets/image/product-img-1.jpg" alt="product1" />
               <div class="product__btn--addToCart">
                 <button>Add To Cart</button>
               </div>
-              <form action="post" class="product__form flex-center">
+              <form action="/addtoCart" class="product__form flex-center">
                 <p class="product__form--displayingSize">
                   Size: <span>SX</span>
                 </p>
@@ -212,43 +213,68 @@
               <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
             </div>
             <div class="product-img">
-              <img src="./img/product-img-2.jpg" />
+              <img src="./assets/image/product-img-2.jpg" alt="product2" />
               <div class="product__btn--addToCart">
                 <button>Add To Cart</button>
               </div>
-              <form action="post" class="product__form flex-center">
+              <form action="/addtoCart" class="product__form flex-center">
                 <p class="product__form--displayingSize">
                   Size: <span>SX</span>
                 </p>
                 <div class="product__form--sizingOptions">
                   <div>
-                    <input type="radio" id="XS" name="productSize" value="XS" />
-                    <label for="XS">XS</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="S" name="productSize" value="S" />
-                    <label for="S">S</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="M" name="productSize" value="M" />
-                    <label for="M">M</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="L" name="productSize" value="L" />
-                    <label for="L">L</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="XL" name="productSize" value="XL" />
-                    <label for="XL">XL</label><br />
+                    <input
+                      type="radio"
+                      id="product1-XS"
+                      name="productSize"
+                      value="XS"
+                    />
+                    <label for="product1-XS">XS</label><br />
                   </div>
                   <div>
                     <input
                       type="radio"
-                      id="2XL"
+                      id="product1-S"
+                      name="productSize"
+                      value="S"
+                    />
+                    <label for="product1-S">S</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product1-M"
+                      name="productSize"
+                      value="M"
+                    />
+                    <label for="product1-M">M</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product1-L"
+                      name="productSize"
+                      value="L"
+                    />
+                    <label for="product1-L">L</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product1-XL"
+                      name="productSize"
+                      value="XL"
+                    />
+                    <label for="product1-XL">XL</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product1-2XL"
                       name="productSize"
                       value="2XL"
                     />
-                    <label for="2XL">2XL</label><br />
+                    <label for="product1-2XL">2XL</label><br />
                   </div>
                 </div>
                 <button class="product__form--submitBtn" type="submit">
@@ -283,43 +309,68 @@
               <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
             </div>
             <div class="product-img">
-              <img src="./img/product-img-3.jpg" />
+              <img src="./assets/image/product-img-3.jpg" alt="product3" />
               <div class="product__btn--addToCart">
                 <button>Add To Cart</button>
               </div>
-              <form action="post" class="product__form flex-center">
+              <form action="/addtoCart" class="product__form flex-center">
                 <p class="product__form--displayingSize">
                   Size: <span>SX</span>
                 </p>
                 <div class="product__form--sizingOptions">
                   <div>
-                    <input type="radio" id="XS" name="productSize" value="XS" />
-                    <label for="XS">XS</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="S" name="productSize" value="S" />
-                    <label for="S">S</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="M" name="productSize" value="M" />
-                    <label for="M">M</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="L" name="productSize" value="L" />
-                    <label for="L">L</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="XL" name="productSize" value="XL" />
-                    <label for="XL">XL</label><br />
+                    <input
+                      type="radio"
+                      id="product2-XS"
+                      name="productSize"
+                      value="XS"
+                    />
+                    <label for="product2-XS">XS</label><br />
                   </div>
                   <div>
                     <input
                       type="radio"
-                      id="2XL"
+                      id="product2-S"
+                      name="productSize"
+                      value="S"
+                    />
+                    <label for="product2-S">S</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product2-M"
+                      name="productSize"
+                      value="M"
+                    />
+                    <label for="product2-M">M</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product2-L"
+                      name="productSize"
+                      value="L"
+                    />
+                    <label for="product2-L">L</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product2-XL"
+                      name="productSize"
+                      value="XL"
+                    />
+                    <label for="product2-XL">XL</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product2-2XL"
                       name="productSize"
                       value="2XL"
                     />
-                    <label for="2XL">2XL</label><br />
+                    <label for="product2-2XL">2XL</label><br />
                   </div>
                 </div>
                 <button class="product__form--submitBtn" type="submit">
@@ -349,43 +400,68 @@
               <span class="flex-center"><i class="fa-regular fa-eye"></i></span>
             </div>
             <div class="product-img">
-              <img src="./img/product-img-4.jpg" />
+              <img src="./assets/image/product-img-4.jpg" alt="product4" />
               <div class="product__btn--addToCart">
                 <button>Add To Cart</button>
               </div>
-              <form action="post" class="product__form flex-center">
+              <form action="/addtoCart" class="product__form flex-center">
                 <p class="product__form--displayingSize">
                   Size: <span>SX</span>
                 </p>
                 <div class="product__form--sizingOptions">
                   <div>
-                    <input type="radio" id="XS" name="productSize" value="XS" />
-                    <label for="XS">XS</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="S" name="productSize" value="S" />
-                    <label for="S">S</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="M" name="productSize" value="M" />
-                    <label for="M">M</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="L" name="productSize" value="L" />
-                    <label for="L">L</label><br />
-                  </div>
-                  <div>
-                    <input type="radio" id="XL" name="productSize" value="XL" />
-                    <label for="XL">XL</label><br />
+                    <input
+                      type="radio"
+                      id="product3-XS"
+                      name="productSize"
+                      value="XS"
+                    />
+                    <label for="product3-XS">XS</label><br />
                   </div>
                   <div>
                     <input
                       type="radio"
-                      id="2XL"
+                      id="product3-S"
+                      name="productSize"
+                      value="S"
+                    />
+                    <label for="product3-S">S</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product3-M"
+                      name="productSize"
+                      value="M"
+                    />
+                    <label for="product3-M">M</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product3-L"
+                      name="productSize"
+                      value="L"
+                    />
+                    <label for="product3-L">L</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product3-XL"
+                      name="productSize"
+                      value="XL"
+                    />
+                    <label for="product3-XL">XL</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="product3-2XL"
                       name="productSize"
                       value="2XL"
                     />
-                    <label for="2XL">2XL</label><br />
+                    <label for="product3-2XL">2XL</label><br />
                   </div>
                 </div>
                 <button class="product__form--submitBtn" type="submit">
@@ -428,27 +504,27 @@
           </button>
           <div class="gallery__slider--imgs">
             <img
-              src="./img/gallery-img-1.jpg"
+              src="./assets/image/gallery-img-1.jpg"
               alt=""
               class="gallery__silder--item"
             />
             <img
-              src="./img/gallery-img-2.jpg"
+              src="./assets/image/gallery-img-2.jpg"
               alt=""
               class="gallery__silder--item"
             />
             <img
-              src="./img/gallery-img-3.jpg"
+              src="./assets/image/gallery-img-3.jpg"
               alt=""
               class="gallery__silder--item"
             />
             <img
-              src="./img/gallery-img-4.jpg"
+              src="./assets/image/gallery-img-4.jpg"
               alt=""
               class="gallery__silder--item"
             />
             <img
-              src="./img/gallery-img-5.jpg"
+              src="./assets/image/gallery-img-5.jpg"
               alt=""
               class="gallery__silder--item"
             />
@@ -459,33 +535,39 @@
         >
       </section>
     </main>
-    <footer class="footer ">
+    <footer class="footer">
       <div class="footer__top vertialPadding">
         <div class="footer__top-item footer__shop">
           <h5 class="footer__title">Shop</h5>
           <ul class="footer__list">
-            <li class="footer__list--item"><a href>New In</a></li>
-            <li class="footer__list--item"><a href>Women</a></li>
-            <li class="footer__list--item"><a href>Men</a></li>
-            <li class="footer__list--item"><a href>Shoes</a></li>
-            <li class="footer__list--item"><a href>Blogs & Accessories</a></li>
-            <li class="footer__list--item"><a href>Top Brands</a></li>
+            <li class="footer__list--item"><a href="#">New In</a></li>
+            <li class="footer__list--item"><a href="#">Women</a></li>
+            <li class="footer__list--item"><a href="#">Men</a></li>
+            <li class="footer__list--item"><a href="#">Shoes</a></li>
             <li class="footer__list--item">
-              <a href>Sale & Special Offers</a>
+              <a href="#">Blogs & Accessories</a>
             </li>
-            <li class="footer__list--item"><a href>Lookbook</a></li>
+            <li class="footer__list--item"><a href="#">Top Brands</a></li>
+            <li class="footer__list--item">
+              <a href="#">Sale & Special Offers</a>
+            </li>
+            <li class="footer__list--item"><a href="#">Lookbook</a></li>
           </ul>
         </div>
         <div class="footer__top-item footer__information">
           <h5 class="footer__title">Information</h5>
           <ul class="footer__list">
-            <li class="footer__list--item"><a href>About</a></li>
-            <li class="footer__list--item"><a href>Customer Service</a></li>
-            <li class="footer__list--item"><a href>Reward Program</a></li>
-            <li class="footer__list--item"><a href>Shipping & Returns</a></li>
-            <li class="footer__list--item"><a href>Privacy Policy</a></li>
-            <li class="footer__list--item"><a href>Term & Conditions</a></li>
-            <li class="footer__list--item"><a href>Blog</a></li>
+            <li class="footer__list--item"><a href="#">About</a></li>
+            <li class="footer__list--item"><a href="#">Customer Service</a></li>
+            <li class="footer__list--item"><a href="#">Reward Program</a></li>
+            <li class="footer__list--item">
+              <a href="#">Shipping & Returns</a>
+            </li>
+            <li class="footer__list--item"><a href="#">Privacy Policy</a></li>
+            <li class="footer__list--item">
+              <a href="#">Term & Conditions</a>
+            </li>
+            <li class="footer__list--item"><a href="#">Blog</a></li>
           </ul>
         </div>
         <div class="footer__top-item footer__customerService">
@@ -507,7 +589,7 @@
           <p class="footer__NewsletterSignUp--title">
             Sign up for exclusive updates, new arrivals & insider only discounts
           </p>
-          <form action="" class="footer__NewsletterSignUp--form">
+          <form action="/signUp" class="footer__NewsletterSignUp--form">
             <input type="text" placeholder="Email Address" />
             <button type="submit">Submit</button>
           </form>
@@ -520,13 +602,17 @@
           </div>
         </div>
       </div>
-      <div class="footer__boundary">
+      <div class="footer__boundary"></div>
       <div class="footer__bottom vertialPadding">
         <div class="footer__bottom--coppyRight">
           <p>© 2014 Ella Demo. All Rights Reserved. Powered by Shopify.</p>
           <p>Shopify Themes by HaloThemes.com</p>
         </div>
-          <img alt="Payment list" src="./img/payment.png" class="footer__bottom--payment"/>
+        <img
+          alt="Payment list"
+          src="./assets/image/payment.png"
+          class="footer__bottom--payment"
+        />
       </div>
     </footer>
   </body>

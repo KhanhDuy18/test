@@ -4,13 +4,41 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* commom*/
+/*font-family*/
 @font-face {
   font-family: Poppins;
-  src: url(/font/Poppins-Regular.ttf);
+  src: url(/assets/font/Poppins-Regular.ttf);
+}
+/* commom*/
+:root {
+  --black: #000;
+  --black-2: #232323;
+  --black-3: #141414;
+  --black-4: #282828;
+  --black-5: #323232;
+  --white: #ffffff;
+  --grey: #8a8a8a;
+  --grey-2: #ccc;
+  --grey-3: #fafafa;
+  --grey-4: #555555;
+  --grey-5: #e0e0e0;
+  --grey-6: #9d9d9d;
+  --grey-7: #969696;
+  --grey-8: #494949;
+  --grey-9: #e8e8e8;
+  --grey-10: #b8b8b8;
+  --pink: #ffe8e8;
+  --pink-2: #c58282;
+  --pink-3: #b05d5d;
+  --orange: #ef6454;
+  --yellow: #ffbb49;
+  --yellow-2: #fff100;
+  --blue: #06bfe2;
+  --blue-2: #436fe7;
+  --blue-3: #4b6cc0;
+  --green: #13c89c;
 }
 html {
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Poppins";
 }
 body {
@@ -46,13 +74,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-.sale {
-  background-color: #ef6454;
-}
-.new {
-  background-color: #06bfe2;
-}
-.hot {
-  background-color: #ffbb49;
-}
-
