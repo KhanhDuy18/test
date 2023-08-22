@@ -1,0 +1,213 @@
+.footer {
+  background-color: #232323;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px  10px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.footer__title {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 14pt;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__list--item a {
+  font-weight: 500;
+  font-size: 12pt;
+  text-decoration: none;
+  color: #8a8a8a;
+}
+.footer__list--item a:hover {
+  color: #fff;
+}
+.footer__list--item:not(:last-child) {
+  margin-bottom: 18px;
+}
+/* Footer form */
+.footer__NewsletterSignUp--title {
+  font-weight: 500;
+  font-size: 12pt;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
+.footer__NewsletterSignUp--form {
+  margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__NewsletterSignUp--form input {
+  width: 290px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 12px;
+  outline: none;
+}
+.footer__NewsletterSignUp--form button {
+  color: #000;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: 600;
+  cursor: pointer;
+  height: 45px;
+  width: 120px;
+  border: none;
+  background-color: #fff;
+}
+.footer__NewsletterSignUp--form button:hover {
+  background-color: #ccc;
+}
+.footer__NewsletterSignUp--socialLink {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__NewsletterSignUp--socialLink a {
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__NewsletterSignUp--socialLink a:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__NewsletterSignUp--socialLink i {
+  color: #141414;
+  margin: 0 auto;
+  font-size: 14pt;
+}
+.footer__NewsletterSignUp--socialLink a:hover {
+  opacity: 0.8;
+}
+/* Footer Boundery */
+.footer__boundary {
+  border-top: 1px solid #282828;
+}
+/* Footer Bottom */
+.footer__bottom {
+  padding-bottom: 55px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom--payment {
+  height: min-content;
+}
+
+.footer__bottom--coppyRight p {
+  color: #8a8a8a;
+  font-size: 12px;
+}
+.footer__bottom--coppyRight p:first-child {
+  margin-bottom: 18px;
+}
+@media (min-width: 1024px) and (max-width: 1650px) {
+  .footer__title {
+    font-size: 16px;
+  }
+  .footer__list--item a {
+    font-size: 14px;
+  }
+  .footer__NewsletterSignUp--title {
+    font-size: 16px;
+  }
+  .footer__NewsletterSignUp--form input {
+    font-size: 14px;
+  }
+  .footer__NewsletterSignUp--form button {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 1023px) {
+  .footer__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 35px;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__bottom--coppyRight {
+    margin-bottom: 20px;
+  }
+  .footer__bottom--payment {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .footer__title {
+    font-size: 14px;
+  }
+  .footer__list--item a {
+    font-size: 12px;
+  }
+  .footer__NewsletterSignUp--title {
+    font-size: 14px;
+  }
+  .footer__NewsletterSignUp--form input {
+    font-size: 12px;
+  }
+  .footer__NewsletterSignUp--form button {
+    font-size: 14px;
+  }
+  .footer__NewsletterSignUp--form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer__NewsletterSignUp--form button {
+    font-size: 12px;
+    width: 90px;
+    height: 40px;
+  }
+  .footer__NewsletterSignUp--socialLink a:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .footer__title {
+    font-size: 12px;
+  }
+  .footer__list--item a {
+    font-size: 10px;
+  }
+  .footer__NewsletterSignUp--title {
+    font-size: 12px;
+  }
+  .footer__NewsletterSignUp--form input {
+    font-size: 10px;
+  }
+  .footer__NewsletterSignUp--form button {
+    font-size: 12px;
+  }
+  .footer__top {
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .footer__top-item {
+    text-align: center;
+  }
+  .footer__top-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .footer__NewsletterSignUp--socialLink {
+    justify-content: center;
+  }
+}
